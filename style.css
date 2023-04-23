@@ -58,7 +58,8 @@ main{
     
 }
 p{
-    padding: 5%;
+    margin: 1% 5%;
+    line-height: 1.7;
 }
 form{
     padding: 20px;
