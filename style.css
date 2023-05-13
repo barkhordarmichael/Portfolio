@@ -17,10 +17,19 @@ nav{
     padding: 0;
     margin: 0;
     width: 100%;
+    display: none;
     
-}    
+    
+}   
 
-ul, footer{
+#personal-info{
+    flex: 3;
+}
+.side{
+    flex: 1;
+    width: 250px;
+}
+footer{
     display: flex;
     height: 50px;
     gap: 20px;
@@ -32,16 +41,50 @@ ul, footer{
 
 
 }   
-ul li{
-
+nav ul li{
     list-style: none;
+    padding: 0 15px;
+    color: hsl(0, 2%, 37%);
+    margin: 0;
+    display: flex;
+    
     
 } 
+ul{
+    display: flex;
+    background-color: hsl(0, 39%, 57%);
+    padding: 25px;
+}
+nav ul li a{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+   
+}
+a:link{
+    text-decoration: none;;
+}
+li:hover{
+    color: #ffff;
+    text-decoration: underline;
+}
 main{
+    width: 100%;
     background-color: hsl(0, 12%, 81%);
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
-
+#languages{
+    display: block;
+    
+}
+#languages ul li{
+   
+   
+}
 #personal-info{
       width: 70%;
       padding: 30px;
@@ -72,4 +115,16 @@ form input{
     width: 50%;
     border-radius: 10px;
     
+}
+
+@media only screen and (max-width:600px){
+    main{
+        flex-direction: row-reverse;
+    }
+    .side{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
 }
