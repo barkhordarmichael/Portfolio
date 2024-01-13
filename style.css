@@ -1,172 +1,210 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: helvetica, sans-serif;
-    
-   
-  }
-  h1,p,label,input,textarea{
-    margin: 0.75rem 0;
-    
-  }
-  input, textarea{
-    height: 1.75rem;
-    width: 100%;
-    border-radius: 5px;
-  }
-  :root{
-    --lightYellow: #F7F2D4;
-    --darkYellow: #FDDC22;
-    --darkBlue: #236AB9;
-    --darkRed: #D61A46;
-    --dark: #091D34;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: helvetica, sans-serif;
   
-   }
-  body{
-    background: var(--darkBlue);
+ 
+}
+h1,p,label,input,textarea{
+  margin: 0.75rem 0;
+  
+}
+input, textarea{
+  height: 1.75rem;
+  width: 100%;
+  border-radius: 5px;
+}
+:root{
+  --lightYellow: #F7F2D4;
+  --darkYellow: #FDDC22;
+  --darkBlue: #236AB9;
+  --darkRed: #D61A46;
+  --dark: #091D34;
+
+ }
+body{
+  background: var(--darkBlue);
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem;
+  background: var(--dark);
+  box-shadow: 10px 10px 8px #000;
+  transition: 1s;
+  
+  
+  
+}
+.menu{
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: var(--darkYellow);
+  transition: 3s;
+  
+}
+a:hover{
+  margin-top: -8px;
+  transition: 1s;
+}
+i{
+  margin-right: 0.5rem;
+  
+}
+.box{
+  
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  box-shadow: 2px 3px 5px solid gray;
+  background: solid black;
+  transition: 2s;
+  
+  
+  
   }
-  html{
-    scroll-behavior: smooth;
-  }
+  
+main{
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background: var(--dark);
+  box-shadow: 10px 10px 8px #000;
+  
+  
+}
+.box:hover{
+  flex-grow: 5;
+  transition: 3s;
+  box-shadow: 2px 3px 2px solid gray;
+  
+  
+}
+.box img{
+  width: 100%;
+  height: 100%;
+  
+}
+input,label{
+  width: 100%;
+}
+
+
+section, form, footer{
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 5px;
+  justify-content: center;
+  color: #fff;
+  background: var(--dark);
+  box-shadow: 10px 10px 8px #000;
+}
+body:hover{
+   animation: mymove 2s ease-out;
+}
+footer{
+  text-align: center;
+}
+/*Animations*/
+@keyframes mymove- {
+  0% {transform: scale(0.60);}
+  20% {transform: scale(0.90);}
+  40% {transform: scale(1);}
+  60% {transform: scale(1.1);}
+  80% {transform: scale(1.15);}
+ 100% {transform: scale(1.15);}
+}
+@media(max-width:600px){
   nav{
-    display: flex;
-    justify-content: space-around;
-    padding: 2.5rem;
-    background: var(--dark);
-    box-shadow: 10px 10px 8px #000;
-    transition: 1s;
+    display: block;
+    position: fixed;
+    width: 25%;
+    height: 40rem;
+    margin-left: -6rem;
+    justify-content: space-between;
     
-    
-  }
-  .menu{
-    display: none;
   }
   a{
-    text-decoration: none;
-    color: var(--darkYellow);
-    transition: 3s;
-    
+    margin-left: 10%;
   }
-  a:hover{
-    margin-top: -8px;
-    transition: 1s;
-  }
-  i{
-    margin-right: 0.5rem;
-    
-  }
-  .box{
-    width: 100px;
-    height: 300px;
-    border: 2px solid black;
-    box-shadow: 2px 3px 5px solid gray;
-    background: solid black;
-    transition: 2s;
-    }
-  main{
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    display: flex;
-    border-radius: 5px;
-    justify-content: center;
-   
-    background: var(--dark);
-   box-shadow: 10px 10px 8px #000;
-    
-  }
-  .box:hover{
-    flex-grow: 3;
-    transition: 3s;
-    box-shadow: 2px 3px 2px solid gray;
-    
-    
-  }
-  .box img{
-    width: 100%;
-    height: 100%;
-  }
-  input,label{
-    width: 100%;
-  }
-  section, form, footer{
+ 
+  .menu{
     display: block;
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 5px;
+    margin-top: -1rem;
+    text-align: center;
+    margin-left: 6rem;
+    transform: rotate(90deg);    letter-spacing: 2rem;
+    color: var(--darkRed);
+    
+    font-size: 1.5rem;
+  }
+  
+  main{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10%;
     justify-content: center;
-    color: #fff;
-    background: var(--dark);
-    box-shadow: 10px 10px 8px #000;
+    align-items: center;
   }
-  
-  @media(max-width:600px){
-    nav{
-      display: block;
-      position: fixed;
-      width: 25%;
-      height: 40rem;
-      margin-left: -6rem;
-      justify-content: space-between;
-      
-    }
-    a{
-      margin-left: 10%;
-    }
-   
-    .menu{
-      display: block;
-      margin-top: -1rem;
-      text-align: center;
-      margin-left: 6rem;
-      transform: rotate(90deg);
-      letter-spacing: 2rem;
-      color: var(--darkRed);
-      
-      font-size: 1.5rem;
-    }
-    nav:hover{
-      margin-left: 0rem;
-      transition: 1s;
-    }
-    main{
-      width: 100%;
-      flex-direction: column;
-      margin-left: 10%;
-      justify-content: center;
-      align-items: center;
-    }
-    main .box{
-      width: 100%;
-      height: 150px;
-    }
-    main .box:hover{
-      
-      margin: 5% 0;
-      height: 50%;
-      transition: 3s;
-    }
+  main .box{
+    width: 100%;
+    height: 150px;
   }
-  @media(max-width:600px){
-    main{
-      display: block;
-      margin: 1.75rem auto;
-    }
-    main .box{
-      width: 90%;
-      margin-top: 0.5rem;
-    }
-    nav{
-      padding-left: 10px;
-      justify-content: space-between;
-      
-      
-    }
-    nav a{
-      margin: 0 15px;
-    }
+  main .box:hover{
+    
+    margin: 5% 0;
+    height: 50%;
+    transition: 3s;
   }
-  
-  
+}
+@media(max-width:600px){
+  main{
+    display: block;
+    margin: 1.75rem auto;
+  }
+  main .box{
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  nav{
+    border-right: 2rem solid red;
+  }
+  nav:hover{
+    margin-left: 0;
+    margin-top: 0;
+    transition: 1s;
+     width: 98%;
+     display: grid;
+     grid-template-rows: reap(6, 1fr);
+     justify-content: center;
+     align-items: center;
+     gap: 5rem; 
+     opacity: 80%;  
+     
+  }
+  nav a{
+    color: white;
+  }
+  /*nav{
+    display: block;
+    flex-direction: row;
+    gap: 5rem;
+    padding-left: 10px;
+    justify-content: space-between;
+    z-index: 5;
+    opacity: 70%;
+    
+  }*/
+  nav a{
+    margin: 0 15px;
+  }
+}
