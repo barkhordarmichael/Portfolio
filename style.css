@@ -178,7 +178,11 @@ footer{
   nav{
     border-right: 2rem solid red;
   }
-  nav:hover{
+  nav::before{
+    content: '';
+    margin-left: -6rem;
+  }
+  nav:active{
     margin-left: 0;
     margin-top: 0;
     transition: 1s;
@@ -191,6 +195,7 @@ footer{
      opacity: 80%;  
      
   }
+  
   nav a{
     color: white;
   }
@@ -204,7 +209,5 @@ footer{
     opacity: 70%;
     
   }*/
-  nav a{
-    margin: 0 15px;
-  }
+  
 }

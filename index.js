@@ -4,4 +4,11 @@ const year = date.getFullYear();
 console.log(year)
 
 const copyrightYear=document.querySelector("#year");
-copyrightYear.innerText = year
+copyrightYear.innerText = year;
+
+
+function clickEvent(){
+ document.querySelector('nav').style.marginLeft="";
+
+console.log("clicked");   
+}
