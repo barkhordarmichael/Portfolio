@@ -47,26 +47,25 @@ a{
   transition: 3s;
   
 }
+nav a:hover{
+  text-decoration: none;
+}
 a:hover{
   margin-top: -8px;
   transition: 1s;
+  box-shadow: 5px 5px 8px blue;
+  box-sizing: -5px -5px -8px blue;
+  border-radius: 50%;
+  text-decoration: none;
 }
 i{
   margin-right: 0.5rem;
   
 }
-.box{
-  
-  width: 100px;
-  height: 300px;
-  border: 2px solid black;
-  box-shadow: 2px 3px 5px solid gray;
-  background: solid black;
-  transition: 2s;
-  
-  
-  
-  }
+i:hover{
+  color: white;
+}
+
   
 main{
   width: 90%;
@@ -96,7 +95,10 @@ input,label{
   width: 100%;
 }
 
-
+a:hover{
+  
+  
+}
 section, form, footer{
   display: block;
   width: 90%;
@@ -124,29 +126,13 @@ footer{
  100% {transform: scale(1.15);}
 }
 @media(max-width:600px){
-  nav{
-    display: block;
-    position: fixed;
-    width: 25%;
-    height: 40rem;
-    margin-left: -6rem;
-    justify-content: space-between;
-    
-  }
+  
   a{
     margin-left: 10%;
+    
   }
  
-  .menu{
-    display: block;
-    margin-top: -1rem;
-    text-align: center;
-    margin-left: 6rem;
-    transform: rotate(90deg);    letter-spacing: 2rem;
-    color: var(--darkRed);
-    
-    font-size: 1.5rem;
-  }
+  
   
   main{
     width: 100%;
@@ -168,46 +154,26 @@ footer{
 }
 @media(max-width:600px){
   main{
-    display: block;
-    margin: 1.75rem auto;
+    padding: 0;
+    margin: auto;
   }
   main .box{
-    width: 90%;
+    width: 98%;
     margin-top: 0.5rem;
+    justify-content: center;
   }
   nav{
-    border-right: 2rem solid red;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    
   }
-  nav::before{
-    content: '';
-    margin-left: -6rem;
-  }
-  nav:active{
-    margin-left: 0;
-    margin-top: 0;
-    transition: 1s;
-     width: 98%;
-     display: grid;
-     grid-template-rows: reap(6, 1fr);
-     justify-content: center;
-     align-items: center;
-     gap: 5rem; 
-     opacity: 80%;  
-     
+  nav a{
+    padding: 0.25;
   }
   
-  nav a{
-    color: white;
-  }
-  /*nav{
-    display: block;
-    flex-direction: row;
-    gap: 5rem;
-    padding-left: 10px;
-    justify-content: space-between;
-    z-index: 5;
-    opacity: 70%;
-    
-  }*/
+ 
+  
   
 }

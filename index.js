@@ -7,8 +7,12 @@ const copyrightYear=document.querySelector("#year");
 copyrightYear.innerText = year;
 
 
-function clickEvent(){
- document.querySelector('nav').style.marginLeft="";
 
-console.log("clicked");   
-}
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle("slow", function(){
+      
+    });
+  });
+});
