@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img{
+  height: 40vh;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://media.istockphoto.com/photos/granite-cobble-path-constrhttps://media.istockphoto.com/photos/amazing-second-floor-recreation-and-game-room-picture-id1263782270?k=20&m=1263782270&s=612x612&w=0&h=jz9J5sOAv3xjcyhDC5DIP2fEWjY_OWdaBI_ahnilvN8=" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://media.istockphoto.com/photos/modern-living-room-picture-id1203011281?k=20&m=1203011281&s=612x612&w=0&h=uY44iXqJBy4S5EP3ajEcXJDK19URigSdfDFfO3q73Xo=" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://media.istockphoto.com/photos/boys-bunk-room-features-bunk-beds-dressed-in-green-olive-picture-id874753848?k=20&m=874753848&s=612x612&w=0&h=f3wRGkVfgpQyz28zCcUqPvXQN_ZSS7-C6QBmsde04G4="" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div id="header">
+  <h1 id="graham">
+  Graham
+  </h1>
+  <h1>
+  KEMP CARPERTS
+  </h1>
+  <div class="socials">
+  <i class="fa fa-instagram icons" style="font-size:28px;"></i>
+  <i class="fa fa-twitter-square" style="font-size:28px;"></i>
+  <i class="fa fa-facebook-square" style="font-size:28px;"></i>
+  <i class="fa fa-linkedin-square" style="font-size:28px;"></i>
+  </div>
+  
+  <div class="nav">
+  <a href="">HOME</a>
+  <a href="">MEET THE TEAM</a>
+  <a href="">OUR SERVICES</a>
+  <a href="">STYLES</a>
+  <a href="">PRICE LIST</a>
+  <a href="">SHOP</a>
+  <a href="">CONTACT</a>
+  </div>
+    <h1>Thank you</h1>
+    <h2>Your form has been submitted.</h2>
+    <h3>We will be in contact with you soon.</h3>
+  </html>
+</body>

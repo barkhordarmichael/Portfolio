@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Bristol University</title>
+</head>
+<body>
+    <!--Navbar-->
+<nav class="p-4 bg-gray-900 text-white">
+    <ul id="nav-bar" class="flex justify-around">
+      <li class="hover:underline cursor-pointer"><a href="#"></a>Home</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>Study at Bristol</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>Schools & facilities</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>Research</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>Business & partnerships</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>News</li>
+      <li class="hover:underline cursor-pointer"><a href=""></a>People</li>
+      
+    </ul>
+    <i id="bars" class="fa fa-bars"></i>
+  </nav> 
+  <!--Header-->
+  <div class="flex justify-between">
+    <div class="flex-start"><img class="mx-4 py-9 flex-start"src="https://www.bristol.ac.uk/assets/responsive-web-project/2.5.0/images/logos/uob-logo.svg" alt=""></div>
+    
+   <div class="flex-end">
+  <a class="my-12" href="#">Current students |</a>
+  <a class="my-12" href="#">Current staff |</a>
+  <a class="my-12" href="#">Alumni</a>
+  <button class="my-12 mx-12 text-white bg-red-800 hover:bg-red-700">Search</button>
+    </div> 
+  </div>
+  <!--Hero section-->
+  <div class="w-screen hero-background">
+    <!-- <img class="object-cover w-full z-0" src="https://images.unsplash.com/photo-1597733336794-12d05021d510?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlY2h8ZW58MHx8MHx8fDA%3D" alt="">-->
+    <h1 id="hero-text" class="p-9 w-3/4 mx-auto font-bold text-center">£225m investment announced for UK's most powerful supercomputer</h1>
+    <a class="align-middle text-white text-center text-3xl border-2 border-white p-4 rounded">Discover Iambard-AI</a>
+  </div>
+  
+  <!--Search bar-->
+  <div class="p-12 -mt-8 bg-red-800 mx-4 flex">
+    <select class="py-2 px-4 w-80 rounded" name="choices" id="">
+      <option class="font-sm" value="undergraduate">Undergraduate</option>
+      <option value="postgraduate_taught">Postgraduate taught</option>
+      <option value="postgraduate_research">Undergraduate research</option>
+    </select>
+    <input class="py-2 pl-4 ml-9 w-3/6 border-s-md skew-x-2" type="text" placeholder="Course name, keyword or UCAS code...">
+    <i class="fa fa-search text-3xl text-white font-bold border-2 rounded border-white pl-3 pr-3 pt-2 border-e-md"></i>
+  </div>
+  <!--Events-->
+  <div class="md:grid grid-cols-3 w-full p-12">
+    <div class="p-3"><h2 class="text-5xl text-red-800 font-bold">Open events and virtual visits</h2>
+    <p class="p-4">Visit us on campus or attend an online event to find out about the student experience at Bristol. Find live talks or watch on-demand, chat with our expert staff and students, explore our virtual tours and find out more about the courses we offer.</p>
+    </div>
+    <div class="divider ml-12"></div>
+    <div class="mx-3">
+    <h2 class="text-2xl text-red-800 font-bold"><a href="#">Undergraduate events</a></h2>
+    <p class="p-4">Find out about our events and tours for prospective undergraduate students.</p>
+    
+    <h2 class="text-2xl text-red-800 font-bold"><a class="hover:text-underline" href="#">Postgraduate events</a></h2>
+    <p class="p-4">Discover on-demonad resources, campus tours, and upcoming events.</p>
+    
+    </div>
+  </div>
+  <!--A university for a progressive city-->
+  <p class="py-9 text-5xl text-red-800 font-bold text-center bg-gray-200">A university for a progressive city</p>
+  <!--3 Grid columns grid-->
+  <div class="grid grid-cols-3 px-4 py-5 gap-4 bg-gray-200">
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1698730905422-eff2365e5fd4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D" alt="">
+    <h2 class="text-2xl text-center py-8 text-red-800 font-bold"><a class="hover:text-underline" href="#">For Bristol</a></h2>
+    <p class="p-2 text-center">We serve and work with wider community of Bristol to benefit us all.</p>
+      
+    </div>
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+    <h2 class="text-2xl text-center py-8 text-red-800 font-bold"><a class="hover:text-underline" href="#">Discover our city</a></h2>
+    <p class="p-2 text-center">Bristol is fanouse for it's indpendent spirit, thriving art scene and alternative culture. see for yourself</p>
+      
+    </div>
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    <h2 class="text-2xl text-center py-8 text-red-800 font-bold"><a class="hover:text-underline" href="#">Look to the future</a></h2>
+    <p class="p-2 text-center">Our vision is ambitious and bold. We're responding to our changing world, leading global chnange and positively impacting lives.</p>
+      
+    </div>
+  </div>
+  <!--7 columns grid-->
+  <div id="seven-column-grid" class="sm:grid grid-cols-7 p-4 mt-5 lg:grid-cols-2">
+    <div class="text-center">
+      <h2 class="text-7xl text-red-800 font-bold pb-5">55</h2>
+      <p>We're ranked 55th in the world</p>
+      <a class="" href="#">QS World University Rankings 2024</a>
+    </div>
+    <div class="divider ml-9"></div>
+    <div class="text-center">
+      <h2 class="text-7xl text-red-800 font-bold pb-5">9</h2>
+      <p>We're ranked 9th in the UK</p>
+      <a class="" href="#">QS World University Rankings 2024 (UK)</a>
+    </div>
+    <div class="divider ml-9"></div>
+    <div class="text-center">
+      <h2 class="text-7xl text-red-800 font-bold pb-5">4</h2>
+      <p>One of the 4 most targeted by top UK recruiter</p>
+      <a class="" href="#">High Fliers Research 2023</a>
+    </div>
+    <div class="divider ml-9"></div>
+    <div class="text-center">
+      <h2 class="text-7xl text-red-800 font-bold pb-5">5</h2>
+      <p>We’re a top 5 UK university for research quality</p>
+      <a class="" href="#">Times Higher Education REF 2021 quality ratings</a>
+    </div>
+    
+  </div>
+  <!--A chance to reform global HIV treatment-->
+  <div class="grid grid-cols-2 text-center py-9">
+    <div id="image-container" class="bg-slate-100 p-4">
+      <img src="https://www.bristol.ac.uk/media-library/sites/homepage/images/hiv-treatment.jpg" alt="">
+    </div>
+    <div id="text-container" class="bg-slate-100">
+      <h2 class="text-red-800 text-3xl font-bold py-5">A chance to reform global HIV treatment</h2>
+      <p class="py-3">Thanks to the £5 million Wellcome Discovery Award, researchers from seven international institutions, including Bristol, hope to transform traditional HIV prevention strategies.</p>
+      <a href=""><button class="my-12 w-64 mx-12 text-white bg-red-800 hover:bg-red-700">Learn more about screening</button></a>
+    </div>
+  </div>
+  <!--Surprising new insights into the formation of planets-->
+  <div class="grid grid-cols-2 text-center py-9">
+    
+    <div id="" class="">
+      <h2 class="text-red-800 text-3xl font-bold py-5">Surprising new insights into the formation of planets</h2>
+      <p class="py-3">A Neptune-sized planet denser than steel has been discovered at Bristol. An international team of astronomers believe its composition could be the result of a giant planetary clash.</p>
+      <a href=""><button class="my-12 w-96 mx-12 text-white bg-red-800 hover:bg-red-700">Find out how Bristol's harnessying AI <i class="fa fa-arrow-right pl-2"></i></button></a>
+    </div>
+    <div id="" class="bg-slate-100 p-4">
+      <img src="https://www.bristol.ac.uk/media-library/sites/homepage/images/new-planets.jpg" alt="">
+    </div>
+  </div>
+  <!--News 4 coumn grid-->
+  <div class="bg slate-200 p-4">
+  <h2 class="text-red-700 text-5xl py-9 font-bold px-4">News</h2>
+  <a class="mx-6 py-9 mb-9 text-xl">Our academics and students regularly make the headlines. From life-changing research to enterprising partnerships, major awards to charitable endeavours, Bristol is bursting with inspiration.</a>
+   <div class="grid grid-cols-4 gap-4 mb-8 py-8">
+      <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+    <h2 class="text-lg text-center m-3 pb-6 text-red-800 font-bold"><a class="hover:text-underline p-4" href="#">Groundbreaking study into plecenta health made possible thanks to grant</a></h2>
+    <p class="p-2 text-center">23 Nov 2023</p>
+      
+    </div>
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+    <h2 class="text-lg text-center m-3 pb-6 text-red-800 font-bold"><a class="hover:text-underline p-4" href="#">Bristol researcchers set to join leading experts at COP28 world 'stands on the edge of buring bridge' to tackle climate change</a></h2>
+    <p class="p-2 text-center">22 Nov 2023</p>
+      
+    </div>
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+    <h2 class="text-lg text-center m-3 pb-6 text-red-800 font-bold"><a class="hover:text-underline p-4" href="#">University of Bristol joins innovative therapeutic drug discovery partnership</a></h2>
+    <p class="p-2 text-center">23 NOV 2023</p>
+      
+    </div>
+    <div class="card bg-slate-100 border-4 bounce hover:shadow-2xl">
+    <img class="border-red-700 border-b-3" src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNpdHl8ZW58MHx8MHx8fDA%3D" alt="">
+    <h2 class="text-lg text-center m-3 pb-6 text-red-800 font-bold"><a class="hover:text-underline p-4" href="#">Discover our city</a></h2>
+    <p class="p-2 text-center">Bristol is fanouse for it's indpendent spirit, thriving art scene and alternative culture. see for yourself</p>
+      
+    </div>
+  </div> 
+    <a href=""><button class="w-48 mx-4 text-2xl text-white bg-red-800 hover:bg-red-700">All news <i class="fa fa-arrow-right pl-2"></i></button></a>
+  </div>
+  
+  <!--Footer-->
+  <div class="w-full bg-gray-900 flex h-96">
+    <div id="div-1" class="p-4">
+      <p class="text-orange-500 text-lg mb-6">Contact</p>
+      <p class="text-gray-100 text-xs">University of Bristol,<br>
+  Beacon House,<br>
+  Queens Road,<br>
+  Bristol,<br>
+  BS8 1QU,<br>
+  United Kingdom <br>
+  
+  Tel: +44 (0)117 928 9000</p>
+  
+  <p class="text-orange-500 text-lg mb-6">Information for</p>
+      <ul class="text-gray-100 text-xs">
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      
+     
+      </ul>,<br>
+  Beacon House,<br>
+  Queens Road,<br>
+  Bristol,<br>
+  BS8 1QU,<br>
+  United Kingdom <br>
+  
+  <p>Tel: +44 (0)117 928 9000</p>
+    </div>
+    <div id="div-2"></div>
+    <div id="div-3"></div>
+    <div id="div-4"></div>
+  </div>
+</body>
+</html>

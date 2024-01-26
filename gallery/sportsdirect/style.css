@@ -1,0 +1,308 @@
+body {
+    min-width: 1200px;
+    margin: 0px;
+    padding: 10px;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    
+  }
+  
+  .header{
+      
+      width: 100%;
+      display: flex;
+      
+  }
+  .logo{
+      position: relative;
+      width: 90px;
+      height: 90px;
+  }
+  #searchbar{
+      margin-top: 30px;
+      margin-left: 200px;
+      width: 450px;
+      height: 30px;
+      background-color: whitesmoke;
+      border-radius: 5px;
+  }
+  .hero-box{
+      min-width: 1200px;
+      align-items: center;
+      
+  }
+  
+  .sale{
+      width: 100%;
+  }
+  .sale img{
+      width: 100%;
+  }
+  .box-images{
+      width: 190px;
+  }
+  
+  .wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    grid-gap: 5px;
+  }
+  
+  .box {
+    background-color: white;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .box:hover{
+      box-shadow: 3px 3px 5px lightslategray;
+      border-radius: 25px;
+  }
+  
+  /* nav bar buttons */
+  .dropbtn {
+   /* background-color: #000000;*/
+   background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+      font-weight: bold;
+    border: none;
+      margin-left: 30px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+      
+    background-color: #f1f1f1;
+      font-size: 11px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /*.dropdown-content a:hover {background-color: #ddd;}*/
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
+  span{
+      display: flex;
+      flex-direction: row-resize;
+      width: 800px;
+      align-items: center;
+      margin-left: 390px;
+      font-style: italic;
+      gap: 5px;
+      padding: 3px;
+  }
+  .hover-btns-div{
+      display: flex;
+      width: 700px;
+      margin-left: 150px;
+      margin-top: -70px;
+      align-items: center;
+      gap: 80px;
+      
+  }
+  .hover-btns{
+      background-color: white;
+      height: 35px;
+      width: 200px;
+      margin-bottom: 10px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 4px;
+  }
+  .hover-btns:hover{
+      background-color: blue;
+      color: white;
+      transition: 1s;
+  }
+  #highlighter{
+      background-color: black;
+      color: white;
+      padding: 3px;
+  }
+  .right-hand-div{
+      display: flex;
+      margin-left: 150px;
+      margin-top: 20px;
+      gap: 20px;
+      flex-direction: row;
+      transform: scale(1.5);
+     
+      align-items: left;
+      
+      
+  }
+  
+  .logos{
+      display: flex;
+      justify-content: space-evenly;
+      
+  }
+  .back-to-school{
+      justify-items: right;
+      margin-left: 750px;
+      color: gray;
+      font-size: 15px;
+      
+  }
+  a{
+      text-decoration: none;
+  }
+  .description{
+      
+      color: black;
+      line-height: 0%;
+      padding: 2px;
+  }
+  .description h5{
+      color: gray;
+  }
+  .description p{
+      color: red;
+      font-weight: bold;
+  }
+  del{
+      color: gray;
+      font-size: 12px;
+  }
+  .second-nav{
+  display: flex;
+  width: 100%;
+  gap: 45px;
+  }
+  .second-nav > a{
+      border: 1px solid gray;
+      padding: 10px;
+      font-family: helvetica, sans-serif;
+      color: black;
+      font-size: 0.8rem;
+  }
+  .second-nav a:hover{
+      border: 1px solid blue;
+  }
+  .third-section{
+      display: flex;
+      justify-content: center;
+      height: 5vh;
+      gap: 45px;
+      padding-top: 20px;
+      background-color:lightgray;
+      font-weight: bold;
+      
+      }
+      .third-nav > a{
+      border: 1px solid gray;
+      padding: 10px;
+      font-family: helvetica, sans-serif;
+      color: black;
+      font-size: 0.8rem;
+      margin-top: -10px;
+      
+      }
+      .bottom-div{
+          height: 30vh;
+          background-color: lightgray;
+      }
+      .signup-section{
+          color: white;
+          width: 100%;
+          text-align: center;
+          height: 55vh;
+          background-color: black;
+          padding: 0px
+          
+              
+      }
+      .btn{
+          border: 0;
+          height: 35px;
+          width: 100px;
+          background: blue;
+          color: white;
+          font-style: bold;
+      }
+      .privacy{
+          width: 100%;
+          margin-left: 200px;
+          font-style: italic;
+          font-size: 11px;
+          color: gray;	
+      }
+      .privacy a{
+          text-decoration: underline;
+          color: gray;
+      }
+      hr{
+          background-color: rgba(27, 26, 26, 0.080);
+          margin: 0;
+          height: 0.2px;		
+      }
+      ul li{
+          list-style: none;
+          text-align: left;
+          line-height: 2;
+          color: white;
+          font-size: 13px;
+      }
+      ul li a{
+          color: white;
+      }
+      .footer-container{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          background-color: #050505;
+          padding: 0px;
+          margin-left: -10px;
+          width: 100%;
+          
+          
+      }
+      .footer-container-items{
+          
+          background-color: rgba(3, 3, 3, 0.911);
+          border: 1px solid gray;
+          border-left: 0px;
+          padding: 20px;
+          font-size: 18px;
+          text-align: center;
+      }
+      .wrapper-header{
+          font-size: 16px;
+      }
+      .bottom-footer{
+          width: 100%;
+          display: flex;
+          gap: 10px;
+          font-size: 12px;
+          color: gray;
+      }
+      .bottom-footer a{
+          color: gray;
+          text-decoration: underline;
+      }
+      
+      .credit-card-images{
+          width: 55%;
+          height: 55px;
+          margin-left: 120px;
+          
+      }

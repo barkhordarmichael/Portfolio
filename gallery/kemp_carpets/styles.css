@@ -1,0 +1,268 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+body {
+    padding: 0;
+      margin: 0;
+      background: #e6e6ff;
+      }
+  #header{
+        
+      align-content: center;
+      text-align: center;
+      background: #e6e6ff;
+      font-family: 'Antonio', sans-serif;
+  }
+  #header h1{
+      
+      width: 100%;
+      font-style: border-box;
+      font-style: bolder;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+  }
+  #graham{
+      font-family: 'Great Vibes', cursive;
+      
+      
+     transform: rotate(-25deg);
+  }
+  .socials{
+      height: 100px;
+  }
+  .socials > img{
+      border-radius: 75%;
+      width: 25px;
+      height: 25px;
+      
+  }
+  .socials i:hover{
+    color: green;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+      
+  }
+  .mobile-nav{
+    display: none;
+  }
+  .nav{
+      
+      display: flex;
+      padding: 15px;
+      margin-top: 10px;
+      gap: 15px;
+      height: 8vh;
+      justify-content: space-evenly;
+      background-color: black;
+      font-family: helvetica, sans-serif;
+      font-size: 0.8em;
+      
+  }
+  
+  
+  .nav a:hover{
+      color: #00b33c;
+      margin-top: -5px;
+      transform: scaleX(1.5);
+      text-shadow: 2px 2px 2px gray;
+      transition: all ease-in 0.8;
+      transition-duration: 0.3s;
+      
+      
+  }
+  .main-content{
+      display: grid;
+      grid-template-columns: 2fr 4fr 1fr;
+      overflow: hidden;
+      background-image: url("https://media.istockphoto.com/photos/close-up-of-hand-touching-soft-carpet-gentle-and-fluffy-carpet-picture-id1285222245?k=20&m=1285222245&s=612x612&w=0&h=bc5usFP-QNQ3P2UwuIjcp0dZqegyX5lbJ3-jSELI38c=");
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center cover;
+      background-size: 100%;
+      
+      margin-top: -15px;
+      padding: 0px;
+      }
+      .fb-page{
+        position: relative;     
+        margin: 10px auto;
+        border-radius: 20px;;
+        box-shadow: 4px 4px 7px;
+      }
+  .content{
+      font-family: helvetica, sans-serif;
+      width: 100%;
+      background: #e6e6ff;
+              
+  }
+  .content p{
+      padding: 10px;
+      line-height: 1.5;
+      font-size: 1.8rem;
+      
+      
+  }
+  .left-content , img{
+      display: flex;
+      width: 10%;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px gray;
+  }
+  .right-content, img{
+      display: flex;
+      gap: 5px;
+      width: 150px;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px gray;
+      }
+  
+  .mySlides {display: none;}
+  img {
+      vertical-align: middle;
+      width: 100%;
+      }
+  
+      .contact-form{
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(216, 214, 231, 30%);
+		gap: 20px;
+		padding: 30px;
+		height: 60vh;
+		width:50vw;
+		/*margin: 100px 170px;*/
+		margin: 100px auto;
+		line-height: 1.5;
+		align-items: center;
+		border-radius: 10px;
+		box-shadow:  3px 3px 4px 4px;
+		
+	}
+	/*.contact-form-content label input{
+		display: block;
+		margin: auto;
+	}*/
+		
+	input, textarea{
+		
+		border-radius: 5px;
+		border-color: aquamarine;
+		width: 350px;
+		height: 2.5vh;
+		border-radius: 6px;
+	}
+	textarea{
+		height: 20vh;
+	}
+	input:hover{
+		border-color:rgb(24, 85, 85);
+		box-shadow:  1px 1px;
+		
+	}
+	textarea:hover{
+		border-color:rgb(62, 126, 126);
+	}
+	
+	.submit-btn{
+		height: 60px;
+		width: 300px;
+		margin-left: 5%;
+		align-content: center;
+		line-height: 3;
+		font-family: 'Antonio', sans-serif;
+		font-size: 1rem;
+		box-shadow: 2px 2px;
+		
+	}
+	.submit-btn:hover{
+		background-color: aqua;
+	}
+	label, select, input, textarea, option{
+		display: block;
+		border: 1;
+		align-content: center;
+		margin: 4px;
+		padding: 10px;
+	}
+    .wrapper{
+        display: none;
+    }
+    /* Extra small devices (phones, 600 and down) */
+@media only screen and (max-width: 600px) {
+	
+	.contact-form{
+		width: 350px;
+		display: block;
+		background-color: rgb(216, 214, 231);
+		align-items: center;
+		border-radius: 10px;
+		margin: auto;
+        height: 100vh;
+			
+	}
+    
+	.submit-btn{
+		width: 200px;
+		margin-left: 35px;
+	}
+	label, select, input, textarea, option{
+		display: block;
+		border: 1;
+		background-color: coral;
+		width: 350px;
+		padding-top: 5px;
+		margin-left: -30px;
+        
+	}
+    
+
+    
+      
+       .main-content{
+        width: 400px;
+        display: block;
+       
+       }
+       .nav{
+        display: none;
+       }
+       .mobile-nav{
+        display: block;
+       }
+        .mobile-nav{
+            width: 400px;
+            position: relative;
+            background: black;
+            animation: mymove 1s;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 10px;;
+                         
+        }
+        .mobile-nav div{
+            height: 40px;
+            padding: 10px;
+        }
+        .slideshow-container{
+            width: 350px;
+        }
+        .content p{
+            font-size: 15px;
+            width: 350px;
+        }
+        .fb-page{
+            width: 350px;
+            margin: auto;
+
+        }
+          @keyframes mymove {
+        from {left: -300px;}
+        to {left: 0px;}
+      }
+}
