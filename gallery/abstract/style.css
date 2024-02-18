@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 00px 0px;
+  padding: 2rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -30,7 +31,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 25px;
+  
   text-decoration: none;
   font-size: 17px;
   margin-left: 30px;
@@ -40,12 +41,14 @@
 }
 .topnav a:hover{
   color: var(--blue);
-  text-decoration: underline;
+  
   transition: all 1s;
-  line-height: 2rem;
+  
+  box-shadow: 0px 60px 20px var(--blue);
+  border-radius: 5px;
   
 
-
+}
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
