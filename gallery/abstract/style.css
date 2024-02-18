@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    
+  }
+  :root{
+    --blue: #4C5FD5;
+    --grey: #dadbf1;
+    --dark: #000000;
+    --white: #fff;
+  }
+  main{
+    padding: 1rem;
+    width: 100%;
+  }
+  /* Create a top navigation bar with a black background color  */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 00px 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 30px;
+}
+.topnav a{
+  transition: 0.5s;
+}
+.topnav a:hover{
+  color: var(--blue);
+  text-decoration: underline;
+  transition: all 1s;
+  line-height: 2rem;
+  
+
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  
+}
+    
+  i{
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  button{
+
+    padding: 0.6rem;
+    background: transparent;
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    min-width: 170px;
+    color: var(--white);
+    float: right;
+  }
+  */
+  button{
+    transition: 0.3s;
+  }
+  button:nth-child(2){
+    background: var(--blue);
+    border: none;
+  }
+  button:nth-child(2):hover{
+     border: 1px solid var(--grey);
+  }
+  button:hover{
+    border-radius: 40px 15px 50px 5px;
+    transition: 0.5s;
+    border: 1px solid var(--grey);
+  }
+  
+  #hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--grey);
+    height: 300px;
+    padding: 5rem;
+    
+  }
+  #hero p{
+    font-size: 3rem;
+    color: var(--dark);
+    font-weight: bold;
+  }
+  #hero input{
+    width: 90%;
+    padding: 2rem;
+    transform: scale(0.8, 0.6);
+    border-radius: 15px;
+    margin-top: 2rem;
+    font-size: 2rem;
+    
+  }
+  input::placeholder{
+    color: var(--grey);
+    font-size: 1.5rem;
+  }
+  .grid-two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    }
+  .card{
+    display: flex;
+    width: 100%;
+    background: var(--white);
+  }
+  .card div{
+    margin-top: 1rem;
+  }
+  .card i{
+    padding: 1rem;
+    font-size: 2rem;
+    
+    
+  }
+  .card p{
+    margin: 1rem 0;
+    
+  }
+  .bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    
+    color: var(--white);
+    background: var(--dark);
+    height: 250px;
+    padding: 2rem 5rem;
+    font-size: 0.7rem;
+    
+  }
+  .bottom-nav ul{
+    margin-bottom: 1rem;
+    
+  }
+  
+  .bottom-nav ul li{
+    list-style: none;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    
+  }
+  .bottom-nav ul li:first-child{
+    margin-top: 2rem;
+    
+  }
+  .small{
+    margin-top: 2rem;
+  }
+  
+  @media only screen and (max-width: 700px){
+    
+    .grid-two-column{
+      grid-template-columns: 1fr;
+    }
+    
+    .bottom-nav{
+      display: flex;
+      
+      gap: 10px;
+    }
+  }
+  .skew-button{
+    border-radius: 15px 25px 30px 5px;
+  }

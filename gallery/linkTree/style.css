@@ -1,62 +1,74 @@
 body{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: helvetica, sans-serif;
-  }
-  .card{
-    display: block;
-    background: #262626;
-    width: 300px;
-    padding: 2rem 0;
-    margin: 10% auto;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    border-radius: 10px;
-   
-    
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: helvetica, sans-serif;
+}
+.card{
+  display: block;
+  background: #262626;
+  width: 300px;
+  padding: 2rem 0;
+  margin: 10% auto;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 10px;
+ 
   
+}
+
+
+.profile-image{
+  width: 70px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px 120px;;
+ 
+}
+
+.profile-text{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.8rem;
+}
+.sub-text{
+  color: hsl(75, 94%, 57%);
+}
+.quote{
+  font-size: 0.8rem;
+}
+.buttons{
+  background: #4d4d4d;
+  width: 80%;
   
-  .profile-image{
-    width: 70px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 20px 120px;;
-   
-  }
+}
+
+ul li{
+  list-style: none;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background: #4d4d4d;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+ul li:hover{
+  background: hsl(75, 94%, 57%);
+  color: #000;
+  font-weight: bold;
+}
+table{
+  width: 100%;
+  margin: 10px 10px;
+  text-align: center;
+}
+.digits{
+  font-size: 0.85rem;
   
-  .profile-text{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 0.8rem;
-  }
-  .sub-text{
-    color: hsl(75, 94%, 57%);
-  }
-  .quote{
-    font-size: 0.8rem;
-  }
-  .buttons{
-    background: #4d4d4d;
-    width: 80%;
-    
-  }
-  
-  ul li{
-    list-style: none;
-    padding: 0.7rem;
-    margin: 0.5rem 0;
-    text-align: center;
-    background: #4d4d4d;
-    width: 80%;
-    border-radius: 10px;
-    font-size: 0.75rem;
-  }
-  ul li:hover{
-    background: hsl(75, 94%, 57%);
-    color: #000;
-    font-weight: bold;
-  }
+}
+i{
+  font-size: 1.4rem;
+}
