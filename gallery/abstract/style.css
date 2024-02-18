@@ -83,7 +83,7 @@
      border: 1px solid var(--grey);
   }
   button:hover{
-    border-radius: 40px 15px 50px 5px;
+   
     transition: 0.5s;
     border: 1px solid var(--grey);
   }
@@ -182,7 +182,27 @@
       
       gap: 10px;
     }
+    .topnav{
+      display: flex;
+      flex-direction: column;
+    }
+    .topnav a{
+      margin-top: 0.5rem;
+      
+    }
+    .topnav a:nth-child(-n +3){
+      padding: 0.6rem;
+      background: transparent;
+      border: 2px solid var(--grey);
+      border-radius: 10px;
+      min-width: 170px;
+      color: var(--white);
+      box-shadow: 0 0 0;
+    }
+    .topnav a:hover{
+      background: var(--blue);
+
+    }
+    
   }
-  .skew-button{
-    border-radius: 15px 25px 30px 5px;
-  }
+  
