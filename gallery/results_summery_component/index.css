@@ -14,6 +14,7 @@
     box-shadow: 0 0 20px var(--lightgrey);
     border-radius: 15px;
     padding: 1rem;
+    margin: 2rem auto;
   }
   .left-side{
     width: 80%;
