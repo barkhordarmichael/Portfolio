@@ -15,6 +15,7 @@
     border-radius: 10px;
     grid-template-columns: repeat(2, 1fr);
     background: #fff;
+    box-shadow: 5px 5px 50px grey;
   }
   img{
     width: 300px;
@@ -83,5 +84,7 @@
       }
       img{
         margin: auto;
+        padding-top: 1rem;
+        border-radius: 10px;
       }
     }
