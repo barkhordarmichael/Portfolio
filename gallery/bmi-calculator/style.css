@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+  }
+  
+  
+  :root{
+    --lightblue: rgba(0, 225, 255, 10%);
+  }
+  .bmi-calculator-info{
+    height: 400px;
+    width: 70%;
+    background: var(--lightblue);
+    padding: 3rem;
+    border-radius: 0px 0px 30px 0px;
+  }
+  h1{
+    font-size: 3em;
+    width: 60%;
+    margin: 5rem 0;
+  }
+  .bmi-calculator-info div{
+    width: 50%;
+    font-size: 0.8em;
+  }
+  p{
+    line-height: 2;
+  }
+  .bmi-calculator{
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 320px;
+  
+  top: 100px;
+  left: 35rem;
+  padding: 2rem;
+  }
+  form{
+    margin: 3rem auto;
+    
+    
+  }
+  .reset-btn{
+    
+    background: red;
+    border-radius: 50px 30px 10px 10px;
+    border: none;
+    font-size: 35px;
+    color: #fff;
+  }
+  td{
+    width: 150px;
+  }
+  tr td{
+    padding: 0.5rem 15px;
+    
+  }
+  .number-input{
+    transform: scaleY(2);
+    border-radius: 5px;
+    border: 0.25px solid grey;;
+  }
+  input[type="number"]{
+    font-size: 0.7rem;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 1px 10px;;
+    
+    
+  }
+  #results-pane{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #0066ff;
+    width: 80%;
+    color: #fff;
+    border-radius: 0px  45px 45px 0px;
+  }
+  .two-column-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+  .two-column-grid p{
+    margin-top: 1rem;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: grey;
+  }
+  .three-column-grid{
+    display: grid;
+    margin-top: 2rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .horizontal-card{
+    display: grid;
+    padding: 1rem;
+    
+  }
+  
+  .horizontal-card p{
+    font-size: 0.75rem;
+    color: grey;
+    line-height: 1.5;
+  }
+  .horizontal-card i{
+    padding: 1rem;
+    color: red;
+    box-shadow: 20px 20px 20px solid grey;
+  }
+  .wrapper-flex{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    gap: 6rem;
+  }
+  .wrapper-flex i,span,h2,p{
+    padding: 1rem;
+  }
+  .wrapper-flex div{
+    max-width: 400px;
+    font-size: 0.85rem;
+    
+  }
+  .wrapper-flex p{
+    line-height: 1.2;
+  }
+  .wrapper-flex-two{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    gap: 1.5rem;
+    }
+  .shadow{
+    box-shadow: 15px 15px 30px #888888;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 1rem;
+    
+    
+  }
+  .wrapper-flex-two div:first-child{
+    margin-left: 40%;
+  }
+  .wrapper-flex-two-left{
+    display: flex;
+    margin-left: 10%;
+    gap: 1rem;
+  }
+  #results{
+    font-size: 2rem
+  }
+  #calculate-button{
+     border-radius: 0px  45px 45px 0px;
+     padding: 0.75rem;
+     width: 130px;
+     background: var(--lightblue);
+     color: #fff;
+  }
+  
+  
+  
+    

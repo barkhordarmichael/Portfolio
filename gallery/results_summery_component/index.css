@@ -133,4 +133,16 @@
     transition: all 0.2s;
   }
   
-  
+  @media (max-width: 600px){
+    main{
+      grid-template-columns: 1fr;
+    }
+    .left-side{
+      width: 300px;
+      
+      margin-left: 10px;
+    }
+    .right-side{
+      margin-left: 10px;
+    }
+  }

@@ -1,0 +1,6 @@
+{
+    "name": "Mike",
+    "age": 60,
+    "sex": "male",
+    "hobbies":  ["computing","TV","cooking"]
+}
