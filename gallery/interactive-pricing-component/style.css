@@ -1,0 +1,77 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    }
+    main{
+      background: #ccebff;
+      height: 400px;
+      margin: 0;
+      padding: 1rem;
+      border-radius: 0px 0px 100px 100px;
+    }
+    .box{
+      padding: 1rem;
+      text-align: center;
+      width: 500px;
+      margin: 2rem auto;
+      padding: 2rem;
+      box-shadow: 10px 10px 10px 10px grey;
+      background: #fff;
+      border-radius: 12px;
+    }
+    h3,span{
+      margin-bottom: 1rem;
+    }
+    #page-view{
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-around;
+    }
+    #billing-check{
+      display: flex;
+      padding: 1rem;
+      gap: 13px;
+      align-items: center;
+    }
+    #billing-check p:nth-child(5){
+      color: red;
+      margin-left: 20px;
+      font-size: 13px;
+    }
+    #info-box{
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      margin: 2rem 0.5rem;
+      
+    }
+    ul{
+      list-style: none;
+      border-right: 1px solid grey;
+    }
+    li{
+      text-align: left;
+      font-size: 0.8rem;
+    }
+    i{
+      margin: 10px 10px;
+      font-size: 11px;
+      color: green;
+    }
+    button{
+      margin: 30px auto;
+      height: 30px;
+      width: 150px;
+      border-radius: 10px;
+      background: #000;
+      color: #bbc;
+    }
+    button:hover{
+      color: #fff;
+    }
+    input[type="range"]{
+      width: 300px;
+    }
