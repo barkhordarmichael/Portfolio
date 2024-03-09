@@ -33,16 +33,18 @@
     color: var(--lightYellow);
     font-size: 32px;
     text-align: center;
-    text-shadow: -25px -25px 30px var(--lightYellow);
+    text-shadow: -25px -25px 5px 20px var(--lightYellow);
   }
   header{
     padding: 3rem;
-    background: var(--dark);
+    background: linear-gradient(to right, var(--darkBlue),var(--dark));
     color: var(--lightYellow);
     font-size: 64px;
     text-align: center;
     text-shadow: 5px 5px 10px white;
     letter-spacing: 25px;
+    
+    
   }
   nav{
     display: flex;
