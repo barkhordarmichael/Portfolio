@@ -80,8 +80,9 @@
     }
 
   .card img:hover{
-    transform: translateY(-30px);
-    box-shadow: 10px 10px 10px 10px grey;;
+    transform: translateY(-10px);
+    
+    box-shadow: 10px 10px 10px 5px grey;;
     transition: 1s;
     
   }
