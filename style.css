@@ -79,13 +79,37 @@ main{
   
 }
 .box:hover{
-  flex-grow: 3;
-  width: 50%;
-  transition: 3s;
-  box-shadow: 2px 3px 2px solid gray;
-  border-bottom: 10px solid var(--darkRed);
+  /*flex-grow: 3;*/
+  width: 300px;
+ 
+  transition: 1s;
+ 
+  padding: 0 0 10px 0;
+  border-bottom: 10px solid #fff;
   
   
+}
+marquee{
+  position: absolute;
+  margin-top: -30px;
+  color: #fff;
+  background: linear-gradient(to bottom, var(--dark), var(--lightYellow));
+  
+}
+marquee ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  
+}
+marquee ul li{
+  animation: animation 2s infinite
+}
+
+@keyframes animation{
+  0%{transform: tranlateY(10px);}
+  50%{transform: translateY(14px)}
+  100%{transform: translate(0px);}
 }
 .box img{
   width: 100%;

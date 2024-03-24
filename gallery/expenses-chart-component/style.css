@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: hevetica, sans-serif;
+  }
+  body{
+    background: hsl(20, 100%, 85%);
+  }
+  .container{
+    width: 350px;
+    margin: 2rem auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  span{
+    margin: auto;
+  }
+  .circle{
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 50%;
+  }
+  .circle-hollow{
+    background: none;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: -10px;
+    z-index: 1;
+  }
+  .display{
+   display: grid;
+   grid-template-columns: repeat(7, 25px);
+   
+   gap: 20px;
+   padding: 2rem;
+   width: 350px;
+   margin: 3rem auto;
+   justify-content: flex-end;
+   border-radius: 10px;
+   height: 200px;
+   
+  }
+  .day-display{
+    display: grid;
+   grid-template-columns: repeat(7, 25px);
+   
+   gap: 20px;
+   
+   width: 350px;
+   margin: -19rem auto;
+   justify-content: center;
+   
+   
+    
+  }
+  .display .bar-chart:first-child{
+    
+    height: 35px;
+    position: relative;
+    margin-top: 35px;
+  }
+  
+  .display .bar-chart:nth-child(3){
+    background: #000;
+    height: 120px;
+    position: relative;
+    margin-top: -50px;
+  }
+  .display .bar-chart:nth-child(4){
+    background: #000;
+    height: 30px;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  .display .bar-chart:nth-child(6){
+    
+    height: 110px;
+    position: relative;
+    margin-top: -40px;
+  }
+  
+  
+  .display-2{
+    display: grid;
+     background: hsl(0, 0%, 95%);
+     padding: 2rem 0;
+     border-radius: 10px;
+  }
+  
+  .bar-chart{
+    width: 40px;
+    height: 70px;
+    background: #ff5c33;
+    border-radius: 5px;
+    
+    
+  }
+  p{
+    font-size: 0.75rem;
+    margin-top: 10rem;
+    color: #cbcb;
+  }
+  header{
+    padding: 1rem;
+    display: flex;
+    background: #ff5c33;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    width: 350px;
+    align-items: center;
+  }
+  h6{
+    margin-bottom: 2rem;
+    color: #f0f0f5;
+  }
+  h3{
+    color: #ffffff;
+  }
+  .spending{
+    margin-top: -15px;
+    color: #fbb;
+  }
+  hr{
+    margin-top: -17rem;
+    
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: -10rem;
+  }
+  footer div h6{
+    color: #cbcb;
+  }
+  footer div:last-child{
+    margin-top: 2.5rem;
+  }
+  footer div:last-child span{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  
+  

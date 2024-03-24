@@ -10,21 +10,27 @@
   
   .card{
     display: grid;
-    width: 700px;
+    max-width: 700px;
     margin: 100px auto;
     border-radius: 10px;
     grid-template-columns: repeat(2, 1fr);
     background: #fff;
     box-shadow: 5px 5px 50px grey;
+    word-wrap: wrap;
+  }
+  p{
+    word-wrap: wrap;
   }
   img{
     width: 300px;
     margin: auto;
   }
   .info{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    word-wrap: wrap;
     
   }
   span{
@@ -34,9 +40,9 @@
   }
   button{
     margin: 3rem;
-    padding: 5px 50px;
+    padding: 15px 50px;
     border-radius: 5px;
-    background: #000;
+    background:#008000;
     color: #dcd9d9;
   }
   h5{
@@ -76,10 +82,10 @@
         
     }
     
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 600px){
       .card{
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 500px;
         
       }
       img{
