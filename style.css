@@ -85,7 +85,8 @@ main{
   transition: 1s;
  
   padding: 0 0 10px 0;
-  border-bottom: 10px solid #fff;
+  border-bottom: 10px solid var(--darkBlue);
+  box-shadow: 0px 0px 5px #fff;
   
   
 }
@@ -153,7 +154,7 @@ footer{
 /*Animations*/
 @keyframes mymove {
   0% {opacity: 0%;}
-  {tranform: rotate(45deg)}
+  0% {tranform: rotate(45deg);}
   20% {opacity: 30%;}
   40% {opacity: 40%;}
   60% {opacity: 50%;}
@@ -166,7 +167,7 @@ footer{
     position: fixed;
     width: 25%;
     height: 40rem;
-    margin-left: -6rem;
+    margin-left: -1rem;
     justify-content: space-between;
     
   }

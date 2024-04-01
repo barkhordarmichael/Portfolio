@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica, sans-serif;
+    text-decoration: none;
+    
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+    gap: 70px;
+    
+  }
+  
+  ul{
+    display: block;
+    
+    list-style: none;
+    font-size: 0.75rem;
+    justify-items: center;
+    
+    
+   
+  }
+  
+  .last-nav{
+    margin-left: 10%;
+    display: flex;
+    gap: 30px;
+  }
+  /*nav ul ul li:last-child{
+  border: 1px solid #cbcb;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: -5px;
+  }*/
+  
+  
+  .brand{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-right: 5%;
+    margin-top: -3px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem auto;
+  }
+  .left-pane{
+    
+    padding: 2rem;
+    
+  }
+  
+  #toggle-menu{
+    display: none;
+    margin-left: auto;
+    font-size: 2rem;
+  }
+  .right-pane img{
+    height: 20em;
+    width: 100%;
+    float: right;
+  }
+  h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    }
+   p{
+     font-size: 0.8rem;
+     color: hsl(0, 0%, 10%);
+     line-height: 20px;
+   }
+   
+   button{
+     padding: 0.5rem;
+     border-radius: 10px;
+     background: #000;
+     color: #fff;
+     margin: 2rem auto;
+     width: 100px;
+   }
+   #menu{
+    display: none;
+   }
+   
+  
+   @media(max-width: 700px){
+     .toggle-menu{
+       display: block;
+       margin-left: 50x;
+       
+       
+     }
+     .menu-items{
+        display: none;
+     }
+     nav ul{
+       display: none;
+       
+     }
+     ul li{
+        line-height: 25px;
+     }
+     .brand{
+       font-size: 6rem;
+     }
+     #menu{
+        display: block;
+        position: absolute;
+        margin-left: 50px;
+        
+     }
+     
+     .rotate-menu{
+        transform: rotate(90deg);
+     }
+   }

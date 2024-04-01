@@ -68,15 +68,20 @@
           <h1>Langauges</h1>
           <p>My experiences are in HTML, CSS, Bootstrap, Tailwind, SASS, Javascript,JQuery, PHP, mySQL, React, Git and Github</p>
         </section>
-        <form action="" id="contact">
-          <label for="name">Name</label><br>
-          <input type="text" name="name" required>
-          <label for="email">Email</label>
-          <input type="text" name="email" required><br>
-          <label for="message">Message</label><br>
-          <textarea name="message" col="500" required></textarea>
-          <button type="submit" class="btn btn-lg animate-pulse btn-primary fs-5">Send message</button>
-        </form>
+        
+
+      <form id="contact" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkgraky" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Please enter your message" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
         <footer>
           <span>&copy Michael Barkhordar </span><span id="year"></span>
         </footer>
