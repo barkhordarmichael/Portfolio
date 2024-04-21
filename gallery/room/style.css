@@ -131,8 +131,8 @@
         position: relative;
         margin-top: 300px;
     }
-    ul{
-      display: none;
+    .menu-items{
+      display: block;
       position: relative;
       line-height: 2em;
       margin: 70px 250px;
@@ -142,7 +142,13 @@
        
     }
     .toggle-menu{
+      
       display: block;
+      position: relative;
+      line-height: 2em;
+      margin: 70px 250px;
+      color: #fff;
+      font-size: 1.1em;
       
       animation: menu-slide 0.5s;
       
