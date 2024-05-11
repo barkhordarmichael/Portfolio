@@ -38,6 +38,12 @@
     padding: 3rem 1rem;
     background: var(--blue-gradient);
     color: #bccb;
+    cursor: pointer;
+  }
+  ul li:hover{
+    text-decoration: underline;
+    
+    
   }
   nav ul ul{
     background: transparent;
@@ -88,12 +94,8 @@
     color: #fff;
   }
 
-  .card-front-sofia{
-    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: red;
-    
-  }
+  
+  
   .card-back{
     position: relative;
     width: 220px;
@@ -155,7 +157,7 @@
   .right-side{
     display: grid;
     border: 1px solid black;
-    width: 90%;
+    width: 100%;
     height: 300px;
     padding: 3rem;
     border-radius: 5px;;
@@ -193,7 +195,7 @@
     font-size: 0.75rem;
   }
   #warning-message{
-    color: red;
+    color: #fff;
     font-size: 0.7rem;
     padding-top: 2rem;
   }

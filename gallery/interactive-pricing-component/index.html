@@ -17,7 +17,7 @@
           <div id="page-view"><span id="page-views" value="10">10K PAGEVIEWS
           </span><div><span>$</span><span id="price"></span>/month</div></div>
           
-          <input type="range" id="range-selector" onchange="rangeSelector()" value= "10" max="200" min="10">
+          <input type="range" id="range-selector" onmousemove="rangeSelector()" onkeydown="rangeSelector()" value= "10" max="200" min="10">
           <div id="billing-check">
           <input type="radio" id="monthly" name="subscription" value="monthly" onclick="monthlyCheck()">
             <p>Monthly billing</p><input onclick="toggle()" type="radio" id="yearly" name="subscription"><p>Yearly billing</p><p id="discount">25% Discount</p>

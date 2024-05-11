@@ -69,11 +69,29 @@ function validateCvc(){
   document.querySelector('.card-front').style.fontFamily="garamond";
 });
 */
-function changeFont(){
-  
-  const cardFront = document.querySelector('.card-front').classList;
+function sofiaFont(){
+  document.querySelector('#name').style.fontFamily="sofia";
+  document.querySelector('#name').classList.remove('font-effect-fire');
+  /*const cardFront = document.querySelector('.card-front').classList;
   
   cardFront.add('card-front-sofia');
   cardFront.style.fontSize="24px";
-  console.log("clicked")
+  console.log("clicked")*/
 }
+function audiowideFont(){
+  document.querySelector('#name').style.fontFamily="audiowide";
+  document.querySelector('#name').classList.remove('font-effect-fire');
+}
+function trirogFont(){
+  document.querySelector('#name').style.fontFamily="trirog";
+  document.querySelector('#name').classList.remove('font-effect-fire');
+}
+function fireFont(){
+  document.querySelector('#name').style.fontFamily="fire";
+  document.querySelector('#name').classList.add('font-effect-fire');
+  
+}
+
+
+
+
