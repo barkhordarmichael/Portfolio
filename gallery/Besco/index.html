@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besco Sales Funnel</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+  
+    <header>
+        <h1 class="logo">Besco</h1>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <h2>Win £500 worth of Besco shopping vouchers </h2>
+        
+        </header>
+        <div class="wrapper">
+            
+          <div class="sides"></div>
+          
+          <div class="content">
+            <div id="popup" class="popup">
+              <h2>Congratulations! You have been selected to take part in a short survey to win a cash prize.</h2>
+              
+              <button id="start" class="surveyBtn" onclick="closeModal()"> Click to start</button>
+            </div>
+          
+          <!--<button class="startbtn">Start your winning journey</button>-->
+          <div class="questions_container">
+           <div class="results">
+               <h3 id="questions">Answer 4 simple questions to win</h3>
+               <div id='counter'>
+                 <span>1</span><span>2</span><span>3</span><span>4</span>
+               </div>
+               
+                <label for="answers">
+                  <meter id="questions-meter" min="0" max="4" value="0.5"></meter>
+                </label>
+              </div>
+            
+              <div class="q1 centered">
+              <h4>On average how many times a week do you shop at Besco.</h4>
+                <button class="questionBtn">2-3 times a week</button>
+                <button class="questionBtn">1-2 times a week</button>
+                <button class="questionBtn">1-2 times a month</button>
+                <button class="questionBtn">Once a month</button>
+        
+              </div>
+              <div class="q2 centered">
+              <h4>On average how much do you spend on your shopping at Besco every month.</h4>
+                <button class="questionBtn2">Less £50.00</button>
+                <button class="questionBtn2">Between £50 - £100</button>
+                <button class="questionBtn2">Between £100 - £300</button>
+                <button class="questionBtn2">More than £300</button>
+        
+              </div>
+              <div class="q3 centered">
+              <h4>On average how much do spend on fuel at Besco every month.</h4>
+                <button class="questionBtn3">Less £50.00</button>
+                <button class="questionBtn3">Between £50 - £100</button>
+                <button class="questionBtn3">Between £100 - £200</button>
+                <button class="questionBtn3">More than £200</button>
+        
+              </div>
+              
+              <div class="q4 centered">
+              <h4>How would you rate the customer service at Besco.</h4>
+                <button class="questionBtn4">Very satisfied</button>
+                <button class="questionBtn4">Somewhat Satisfied</button>
+                <button class="questionBtn4">Not satisfied</button>
+                <button class="questionBtn4">Poor</button>
+                
+                
+        
+              </div>
+              </div>
+              
+              <div class="saving-answers">
+              <span>Compiling your anwers.</span>
+              <meter id="progress-meter" value="0" min="0" max="100"></meter>
+              <span>Verifying ip address</span>
+              <span id="ipAddress"></span>
+              <meter id="progress-meter-ip" value="0" min="0" max="100"></meter>
+              <span>Checking your prize</span>           
+              <meter id="progress-meter-prize" value="0" min="0" max="100"></meter>
+              <span class="blink_text">Please wait....</span>
+              </div>
+              
+              <!--set up game journey-->
+              <div class="game-journey">
+                <h2>Congratulations!</h2>
+                <h3>Play a simple game to reveal your winning prize.</h3>
+                <button id="click-start" class="startbtn">Click to start</button>
+              </div>
+              <!--set up game section-->
+                  <div class="game-section">
+                    <h3>GUESS THE FRUIT</h3>
+        
+        
+                    <div id="word-container"></div>
+                    <p id="message"></p>
+                    <div id="game-input">
+                    <label for="guessInput">Enter a letter:</label>
+                    <input  onkeyup="guessLetter()" type="text" id="guessInput" maxlength="1">
+                    <!--<button onkeyup="guessLetter()">Guess</button>-->
+                    
+                   </div>
+                   <!--Show winning prize-->
+                   <section id="display-winning-prize">
+                    <p id="fetching-prize-money" class = "blink_text">
+                        Fetching your prize
+                    </p>
+                     <span id="you-won">You Won!</span>
+                     <div  class="spinning-coin">
+                   
+                    <h1>£</h1><h1 id="amount">0.00</h1>
+                    
+                    </div>
+                    </section>
+                    
+
+                  
+                  <section class="comments">
+                      <img src="./images/img_1.avif" alt="" class="avatar">
+                      <p class="name">Sophie.P</p>
+                      <p class="comment">I didn't believe is at first but the winnings where real. I won £275 and was quickly sent a link to get it collected.</p>
+                      
+                      <img src="./images/img_2.avif" alt="" class="avatar">
+                      
+                      <p class="name">Ron.K</p>
+                      <p class="comment">My friend sent me this. I was sceptical at first but thought to give it a try. You don't win massive amounts but what you win is real.t.</p>
+                      <img src="./images/img_3.avif" alt="" class="avatar">
+                      <p class="name">rachel.J</p>
+                      <p class="comment">What a surprise, I though I give it go just for a try and I won £356.</p>
+                      <img src="./images/img_4.avif" alt="" class="avatar">
+                      <p class="name">Simon.T</p>
+                      <p class="comment">I have never won anything on other sites so didn't think I'd here either but for the first time I won £125 and money was sent quickly..</p>
+                    
+                   </section>
+                  </div> 
+                  
+                  <form action="POST" id="emailform">
+                  
+                    <p class="blink_text">Enter yor email to receive instructions on how to claim your winnings.</p>
+                    <input id="emailinput" type="email" placeholder="joe@gmail.com">
+                    <button class="startbtn" type="submit">Submit</button>
+                </form>
+                   
+                    
+        
+        
+                   
+                   </div>  
+                   
+          
+          <div class="sides"></div>
+        </div>
+        
+        
+        
+        <script src="script.js"></script>  
+</body>
+</html>

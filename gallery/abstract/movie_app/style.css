@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: helvetic, sans-serif;
+    text-decoration: none;
+  }
+  main{
+     background: url('https://s.studiobinder.com/wp-content/uploads/2019/11/Marvel-Movies-in-Order-of-Story-Featured-StudioBinder-min.jpg');
+     height: 500px;
+     margin: 10px;
+     
+     
+  }
+  .box-cover{
+    background: black;
+    opacity: 50%;
+    height: 500px;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 20px 10px;
+  }
+  .sub-nav{
+    
+    margin-left: -40%;
+    font-size: 0.85em;
+  }
+  .sub-nav ul{
+    margin-left: -20%;
+  }
+  h1{
+    font-weight: 200;
+  }
+  .contents{
+    padding: 1rem;
+    max-width: 60%;
+  }
+  .contents .sub-nav{
+    margin-left: auto;
+  }
+  article{
+    font-size: 0.8rem;
+    max-width: 60%;
+    margin-left: 7%;
+    margin-bottom: 1.5rem;
+  }
+  .play-now{
+    padding: 5px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5%;
+    width: 100px;
+  }
+  .add-to-watch-list{
+    padding: 5px;
+    background: grey;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5%;
+    width: 150px;
+    
+  }
+  a:hover{
+    text-decoration: underline;
+    
+  }
+  .play-now:hover{
+    background: darkred;
+    border: 1px solid white;
+    transform: 0.5s;
+  }
+  .add-to-watch-list:hover{
+    background: darkgrey;
+  }

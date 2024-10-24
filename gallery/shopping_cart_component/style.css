@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: recursive, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  nav{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    
+    
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    
+  }
+  nav ul:first-child{
+    margin-left: 20px;
+  }
+  .logo{
+    margin-right: 30px;
+    font-weight: bold;
+  }
+  .avatar{
+    width: 35px;
+    height: 35px;
+    display: cover;
+    border-radius: 50%;
+  }
+  .container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 2px 2px;
+    overflow: hidden;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem 2rem;
+    max-width: 900px;
+    align-items: center;
+  }
+  
+  img{
+    position: relative;
+    /*max-width: 250px;*/
+    width: inherit;
+    height: auto;
+    border-radius: 5px;
+    
+  }
+  .thumbnail{
+    display: flex;
+    gap: 13px;
+    margin: 20px auto;
+  }
+  .thumbnail img{
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+  }
+  .right-pane{
+    display: grid;
+    width: 70%;
+  }
+  .right-pane p:first-child{
+    color: orange;
+    font-size: 13px;
+    font-weight: bold;
+    
+  }
+  h1{
+    font-weight: bold;
+    
+    font-size: 1.8rem;
+  }
+  .discount{
+    background: #ffe0b3;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    
+  }
+  .strikethrough{
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #a6a6a6;
+  }
+  .input_div{
+    display: flex;
+    background: rgba(242, 242, 242, 70%);
+    padding: 0 5px;
+    align-items: center;
+    
+    border-radius: 5px;
+    
+  }
+  
+  input{
+    max-width: 35px;
+    margin: 0 15px;
+    position: relative;
+    text-align: center;
+    border: none;
+    background: transparent;
+    }
+    button{
+     margin-left: 20px;
+     width: 150px;
+     padding: 5px;
+     border: none;
+     border-radius: 5px;
+     background: orange;
+     box-shadow: 5px 5px 10px #ffdd99;
+     font-size: 0.8rem;
+    }
+    #basketQty{
+      display: absolute;
+      margin-left: -20px;
+      margin-top: -20px;
+      color: red;
+      padding: 3px;
+      font-weight: bold;
+      
+    }
+    #basket{
+      font-size: 20px;
+    }
+    
+    #one{
+      max-width: 250px;
+      max-height: 250px;
+    }
+    
+  

@@ -20,7 +20,7 @@
   }
   main{
     
-    width: 850px;
+    max-width: 850px;
     
     margin: 10% auto;
     justify-content: center;
@@ -199,6 +199,59 @@
     font-size: 0.7rem;
     padding-top: 2rem;
   }
-    
-  
+
+  @media (max-width: 750px){
+
+    body{
+      width: 600px;
+    }
+
+    .main{
+      
+      width: 700px;;
+    }
+    .wrapper{
+      grid-template-columns: 1fr;
+      
+      
+      overflow: hidden;
+      
+      
+
+    }
+    .right-side, .left{
+      
+      width: 40%;
+    }
+    .card-details{
+      max-width: 500px;
+    }
+    .card-front{
+      margin-left: -120px;
+  }
+    .card-back{
+      margin-left: -170px;
+    }
+    .card-details{
+      margin-left: 0;
+      display: grid;
+    }
+    table{
+      display: grid;
+      max-width: 500px;
+    }
+    button{
+      margin-left: auto;
+    }
+    nav{
+      max-width: 600px;
+    }
+    nav ul{
+      width: 600px;
+      display: block;
+    }
+    nav ul #font-choices{
+      display: none;
+    }
+}
   
